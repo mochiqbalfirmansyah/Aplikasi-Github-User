@@ -2,7 +2,6 @@ package com.dicoding.submissionawal.data.retrofit
 
 import de.hdodenhof.circleimageview.BuildConfig
 import okhttp3.Interceptor
-import okhttp3.OkHttpClient
 import okhttp3.OkHttpClient.*
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
