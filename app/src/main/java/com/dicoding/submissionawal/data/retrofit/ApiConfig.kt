@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
     companion object{
-        const val TOKEN = "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"
+        const val key = "your token github"
 
         fun getApiService(): ApiService {
             val loggingInterceptor = if(BuildConfig.DEBUG) {
@@ -21,7 +21,7 @@ class ApiConfig {
             val authInterceptor = Interceptor { chain ->
                 val req = chain.request()
                 val requestHeaders = req.newBuilder()
-                    .addHeader("Authorization", "token $TOKEN")
+                    .addHeader("Authorization", "token $key")
                     .build()
                 chain.proceed(requestHeaders)
             }
